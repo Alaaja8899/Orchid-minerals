@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-gray-200 h-screen bg-[url('https://www.ivanhoemines.com/wp-content/themes/ivanhoemines/img/home_operations_map_drc.svg?v2)')] bg-cover bg-center ">
+    <main className=" min-h-screen  bg-mainColor">
       
-      <div className="bg-mainColor bg-opacity-50 h-full">
+      <div className="bg-[url('https://www.ivanhoemines.com/wp-content/themes/ivanhoemines/img/home_operations_map_drc.svg?v2)')] bg-cover bg-center bg-opacity-50 min-h-screen">
 
       <HeroSection/>
     <Operations/>
