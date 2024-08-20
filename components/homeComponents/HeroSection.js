@@ -6,7 +6,7 @@ const HeroSection = () => {
     <div className="bg-[url('/assets/hero-image.jpg')] bg-cover bg-center h-5/6  rounded-b-[10%] ">
     <div className="flex flex-col items-start justify-center h-full bg-[rgb(0,0,0,.8)]">
    
-      <div className="top text-white text-center   rounded-b-[10%] p-6  h-full ">
+      <div className="top text-white text-center   gap-4 flex flex-col p-6  h-full my-20">
         <h1
         className='md:text-4xl text-2xl font-bold text-white '
         >
