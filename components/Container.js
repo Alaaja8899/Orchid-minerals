@@ -3,7 +3,7 @@ import React from 'react'
 function Container({children}) {
   return (
     <div
-    className='   min-h-dvh'
+    className=''
     >
       {children}
     </div>
