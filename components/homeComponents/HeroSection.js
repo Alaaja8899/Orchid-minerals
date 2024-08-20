@@ -6,7 +6,7 @@ const HeroSection = () => {
     <div className="relative h-5/6 rounded-b-[10%] overflow-hidden">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        src="/assets/hero-video.mp4"
+        src="https://videos.pexels.com/video-files/4474927/4474927-uhd_2560_1440_30fps.mp4"
         autoPlay
         loop
         muted
