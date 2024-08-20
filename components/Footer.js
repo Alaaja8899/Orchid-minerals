@@ -62,11 +62,11 @@ function Footer() {
 
               </div>
               <form  
-              className="email flex flex-col my-5 "
+              className="email flex flex-col my-5 gap-3 "
                onSubmit={(e)=> e.preventDefault()}>
-                <h2>Subscribe for updates</h2>
+                <h2 className='font-bold text-mainColor capitalize '>Subscribe for updates</h2>
                 <div className="info-data flex relative">
-                <input className='border-2 border-gray-400  outline-none p-3 rounded focus:border-mainColor' required
+                <input className='border-2 w-[25rem] border-gray-400  outline-none p-3 rounded focus:border-mainColor' required
                  type="email" name="email" id="email" placeholder='Email Address' />
                 <button className=' translate-x-[-30px]'><FaArrowRight size={22}/></button>
                 </div>
