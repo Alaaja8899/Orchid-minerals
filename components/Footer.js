@@ -56,7 +56,7 @@ function Footer() {
                   <h1 className='font-bold text-mainColor my-3 text-3xl'>Frequently asked Questions ?</h1>
                 {
                   faqs.map(data=>{
-                    return <FAQQ data={data} />
+                    return <FAQQ data={data} key={0} />
                   })
                 }
 
