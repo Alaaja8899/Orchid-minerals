@@ -3,7 +3,7 @@ import React from 'react'
 function Container({children}) {
   return (
     <div
-    className='container mx-auto  min-h-dvh'
+    className='   min-h-dvh'
     >
       {children}
     </div>
