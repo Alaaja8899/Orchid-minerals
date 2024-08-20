@@ -2,10 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 const HeroSection = () => {
   return (
-    <div className="bg-[url('/assets/hero-image.jpg')] bg-cover bg-center h-1/3 rounded-b-[10%] overflow-hidden">
+    <div className="bg-[url('/assets/hero-image.jpg')] bg-cover bg-center h-1/2  rounded-b-[10%] overflow-hidden">
     <div className="flex items-start justify-center h-full bg-[rgb(0,0,0,.8)]">
    
-      <div className="top text-white text-center   rounded-b-[10%] p-6  h-full">
+      <div className="top text-white text-center   rounded-b-[10%] p-6  h-full ">
         <h1
         className='md:text-4xl text-2xl font-bold text-white '
         >
