@@ -43,11 +43,11 @@ function Footer() {
     <div className=''>
     
 
-        <div className="upper pt-6">
+        <div className="upper pt-6 container mx-auto p-6">
         <Image src={'/assets/logo-dark.png'} width={200} height={400} />
 
 
-          <div className="FAQ flex-col p-6">
+          <div className="FAQ flex-col ">
 
 
 
