@@ -96,7 +96,7 @@ const FAQQ=(props)=>{
   const {title , desc} = props.data
   const [open,setOpen] = useState(true)
   return(
-<div className="question transition-all ease-in-out duration-200 bg-gray-200 border border-mainColor p-3 gap-2">
+<div className="question w-9/12 transition-all ease-in-out duration-200 bg-gray-200 border border-mainColor p-3 gap-2">
   <h1 
     onClick={() => setOpen(!open)}
     className="title cursor-pointer text-mainColor font-bold flex justify-between">
