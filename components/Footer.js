@@ -40,7 +40,7 @@ function Footer() {
     const year = new Date().getFullYear();
 
   return (
-    <div className=''>
+    <div className='bg-white'>
     
 
         <div className="upper pt-6 container mx-auto p-6">

@@ -19,7 +19,7 @@ const ops=[
 
 const Operations = () => {
   return (
-    <div className='flex flex-wrap gap-3 items-center justify-center mt-5 bg-mainColor bg-opacity-100 p-3 w-full'>
+    <div className='flex flex-wrap gap-3 items-center justify-center mt-5 bg-mainColor bg-opacity-100  w-full  p-6'>
 
         {
             ops.map(data=>{
