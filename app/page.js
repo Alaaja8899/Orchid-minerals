@@ -1,4 +1,5 @@
 import HeroSection from "@/components/homeComponents/HeroSection";
+import Operations from "@/components/homeComponents/Operations";
 import Image from "next/image";
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
       <div className="bg-mainColor bg-opacity-50 h-full">
 
       <HeroSection/>
-
+    <Operations/>
       </div>
 
 
