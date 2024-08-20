@@ -13,7 +13,7 @@ function Header() {
         const [open , setOpen] =useState(false)
 
   return (
-    <div className='bg-mainColor text-white fixed h-[100px] flex items-center justify-center right-0 left-0 top-0 z-10'>
+    <div className='bg-mainColor border-b text-white fixed h-[100px] flex items-center justify-center right-0 left-0 top-0 z-10'>
         <div className="w-full  relative h-full mx-auto p-6 flex items-center justify-between">
         <a href="" className="brand">
             <Image src={'/assets/logo-white.png'} width={200} height={400} />
