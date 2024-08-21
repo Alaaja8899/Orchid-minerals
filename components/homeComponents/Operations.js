@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaGroupArrowsRotate } from "react-icons/fa6";
+import { MdPlayArrow } from "react-icons/md";
 
 const ops=[
         {
@@ -34,8 +35,8 @@ const Operations = () => {
 const SingleOp=(props)=>{
     return (
 
-        <div className="single-op text-white border hover:text-orange-300 md:w-[20rem] w-full p-3 rounded flex  gap-2 flex-col cursor-pointer">
-        <FaGroupArrowsRotate size={32} color='white'/>
+        <div className="single-op text-white  hover:text-orange-300 md:w-[25rem] w-full p-3 rounded flex  gap-2 md:flex-row items-center  cursor-pointer">
+        <span className='bg-white rounded-full'><MdPlayArrow size={42} color='red'/></span>
         <div className="txt">
             <h1 className='font-bold'>{props.title}</h1>
             <p>{props.desc}</p>
