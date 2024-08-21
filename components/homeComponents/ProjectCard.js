@@ -1,6 +1,6 @@
 "use client";
 // Import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from 'swiper/modules';
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -57,9 +57,13 @@ function ProjectCard() {
       </div>
 
       <Swiper
-        modules={[Navigation, Pagination, A11y]}
+        modules={[Navigation, Pagination,Autoplay, A11y]}
         spaceBetween={60} // Increase space between slides
         slidesPerView={1}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         // navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}

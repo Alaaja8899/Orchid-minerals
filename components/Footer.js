@@ -1,9 +1,8 @@
-"use client"
-import React, { useState } from 'react'
+"use client";
+import React, { useState } from 'react';
 import { IoLogoYoutube } from "react-icons/io";
-import { FaFacebookSquare , FaInstagram } from "react-icons/fa";
-import { IoIosArrowDown,IoIosArrowUp } from "react-icons/io";
-
+import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa6';
 
@@ -34,84 +33,85 @@ const faqs = [
   }
 ];
 
-
-
 function Footer() {
-    const year = new Date().getFullYear();
+  const year = new Date().getFullYear();
 
   return (
-    <div className='bg-white'>
-    
-
-        <div className="upper pt-6 container mx-auto p-6">
-        <Image src={'/assets/logo-dark.png'} width={200} height={400} />
-
-
-          <div className="FAQ flex-col ">
-
-
-
-
-              <div className="faqs">
-                  <h1 className='font-bold text-mainColor my-3 text-3xl'>Frequently asked Questions ?</h1>
-                {
-                  faqs.map(data=>{
-                    return <FAQQ data={data} key={0} />
-                  })
-                }
-
-              </div>
-              <form  
-              className="email flex flex-col my-5 gap-3 "
-               onSubmit={(e)=> e.preventDefault()}>
-                <h2 className='font-bold text-mainColor capitalize '>Subscribe for updates</h2>
-                <div className="info-data flex relative">
-                <input className='border-2 w-[25rem] border-gray-400  outline-none p-3 rounded focus:border-mainColor' required
-                 type="email" name="email" id="email" placeholder='Email Address' />
-                <button className=' translate-x-[-30px]'><FaArrowRight size={22}/></button>
-                </div>
-                <p>No spam, notifications only about new products, updates and freebies. You can always unsubscribe.</p>
-              </form>
-     
-
-
+    <div className="bg-gray-50">
+      <div className="container mx-auto p-8 space-y-12">
+        
+        <div className="flex justify-between items-center">
+          <Image src="/assets/logo-dark.png" width={200} height={400} alt="Orchid Minerals Logo" />
+        </div>
+        
+        <div className="space-y-8">
+          <h1 className="font-bold text-mainColor text-3xl">Frequently Asked Questions</h1>
+          <div className="space-y-4">
+            {faqs.map((data, index) => (
+              <FAQItem key={index} data={data} />
+            ))}
           </div>
 
-        </div>
-        <div className="lower text-white bg-mainColor flex md:flex-row flex-col-reverse px-6 py-4 md:items-center gap-3  justify-between">
-            <p className=''>&copy; Copyright {year} | ORCHID MINES</p>
-            <div className="socials flex gap-3">
-                <IoLogoYoutube size={32}/>
-                <FaFacebookSquare size={32}/>
-                <FaInstagram size={32}/>
+          <form className="bg-white p-6 rounded-lg shadow-lg space-y-4" onSubmit={(e) => e.preventDefault()}>
+            <h2 className="font-bold text-mainColor text-xl">Subscribe for Updates</h2>
+            <div className="relative">
+              <input
+                className="border-2 w-full border-gray-300 p-4 outline-none rounded-lg focus:border-mainColor focus:ring-2 focus:ring-mainColor transition"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email address"
+                required
+              />
+              <button className="absolute right-4 top-1/2 transform -translate-y-1/2">
+                <FaArrowRight size={24} className="text-mainColor" />
+              </button>
             </div>
+            <p className="text-sm text-gray-500">No spam, just updates on new products, offers, and freebies. Unsubscribe anytime.</p>
+          </form>
         </div>
+      </div>
 
-
+      <div className="bg-mainColor py-6 mt-12">
+        <div className="container mx-auto flex flex-col-reverse md:flex-row justify-between items-center text-white space-y-4 md:space-y-0">
+          <p className="text-center md:text-left">&copy; {year} ORCHID MINERALS. All rights reserved.</p>
+          <div className="flex space-x-6">
+            <a href="#" aria-label="YouTube">
+              <IoLogoYoutube size={32} />
+            </a>
+            <a href="#" aria-label="Facebook">
+              <FaFacebookSquare size={32} />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <FaInstagram size={32} />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-const FAQQ=(props)=>{
-  const {title , desc} = props.data
-  const [open,setOpen] = useState(true)
-  return(
-<div className="question  transition-all ease-in-out duration-200 bg-gray-200 border border-mainColor p-3 gap-2">
-  <h1 
-    onClick={() => setOpen(!open)}
-    className="title cursor-pointer text-mainColor font-bold flex justify-between">
-      {title}
-      <span>
-        {open ? <IoIosArrowDown/> : <IoIosArrowUp/>}                
-      </span>
-  </h1>
-  
-  <p className={`answers text-gray-500 transition-all duration-300 ease-in-out overflow-hidden ${open ? 'max-h-0 opacity-0' : 'max-h-[1000px] opacity-100'}`}>
-    {desc}
-  </p>
-</div>
-  )
+function FAQItem({ data }) {
+  const { title, desc } = data;
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="border border-mainColor rounded-lg p-4 bg-white shadow-md">
+      <h3
+        onClick={() => setOpen(!open)}
+        className="text-mainColor font-bold cursor-pointer flex justify-between items-center"
+      >
+        {title}
+        <span>{open ? <IoIosArrowUp /> : <IoIosArrowDown />}</span>
+      </h3>
+      <div
+        className={`transition-all duration-300 ease-in-out overflow-hidden ${open ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}
+      >
+        <p className="text-gray-500 mt-3">{desc}</p>
+      </div>
+    </div>
+  );
 }
 
-
-export default Footer
+export default Footer;
