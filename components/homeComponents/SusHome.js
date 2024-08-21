@@ -5,7 +5,7 @@ function SusHome() {
   return (
     <div className='bg-white'>
         
-            <div className="container mx-auto px-6 flex  items-center">
+            <div className="container mx-auto px-6 md:flex-row flex-col flex  items-center">
 
             <div className="side-1 md:w-1/2 w-full py-6 flex-col flex gap-3">
                 <h1 className='text-mainColor text-4xl font-bold '>
@@ -30,7 +30,7 @@ function SusHome() {
             </div>
 
 
-                    <img className='md:block hidden'
+                    <img className=''
                     src="https://www.ivanhoemines.com/wp-content/themes/ivanhoemines/img/sustainability_people.png" 
                      />
 
