@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div className="relative h-1/2 rounded-b-[30%] overflow-hidden">
+    <div className="relative h-1/2 rounded-b-[20%] overflow-hidden">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         src="https://orchid-minerals.vercel.app/assets/hero-video.mp4"

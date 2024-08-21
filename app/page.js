@@ -1,5 +1,6 @@
 import HeroSection from "@/components/homeComponents/HeroSection";
 import Operations from "@/components/homeComponents/Operations";
+import ProjectCard from "@/components/homeComponents/ProjectCard";
 import Image from "next/image";
 
 export default function Home() {
@@ -10,6 +11,9 @@ export default function Home() {
 
       <HeroSection/>
       <Operations />
+
+
+        <ProjectCard/>
 
       </div>
 
