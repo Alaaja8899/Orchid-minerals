@@ -69,8 +69,8 @@ function ProjectCard() {
           <div className="center flex items-center justify-center">
 
           {data.map(data=>{
-            return         <SwiperSlide>
-            <SingleCard data={data} key={0}/>
+            return         <SwiperSlide key={0}>
+            <SingleCard data={data} />
           </SwiperSlide>
   
           })}
