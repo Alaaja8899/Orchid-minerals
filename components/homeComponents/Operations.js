@@ -36,7 +36,7 @@ const SingleOp=(props)=>{
     return (
 
         <div className="single-op text-white  hover:text-orange-300 md:w-[25rem] w-full p-3 rounded flex  gap-2 md:flex-row items-center  cursor-pointer">
-        <span className='bg-white rounded-full'><MdPlayArrow size={42} color='red'/></span>
+        <span className='bg-white rounded-full text-red-500'><MdPlayArrow size={42} /></span>
         <div className="txt">
             <h1 className='font-bold'>{props.title}</h1>
             <p>{props.desc}</p>
