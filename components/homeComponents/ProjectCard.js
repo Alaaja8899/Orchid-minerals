@@ -70,7 +70,7 @@ function ProjectCard() {
 
           {data.map(data=>{
             return         <SwiperSlide>
-            <SingleCard data={data} />
+            <SingleCard data={data} key={0}/>
           </SwiperSlide>
   
           })}
