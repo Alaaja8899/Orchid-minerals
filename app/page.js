@@ -1,7 +1,9 @@
 import HeroSection from "@/components/homeComponents/HeroSection";
+import LookingLink from "@/components/homeComponents/LookingLink";
 import Operations from "@/components/homeComponents/Operations";
 import ProjectCard from "@/components/homeComponents/ProjectCard";
 import Story from "@/components/homeComponents/Story";
+import SusHome from "@/components/homeComponents/SusHome";
 import TextEvu from "@/components/homeComponents/TextEvu";
 import Image from "next/image";
 
@@ -16,6 +18,8 @@ export default function Home() {
         <ProjectCard/>
         <TextEvu/>
         <Story/>
+        <SusHome/>
+        <LookingLink/>
       </div>
 
 
