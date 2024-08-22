@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaGroupArrowsRotate } from "react-icons/fa6";
 import { MdPlayArrow } from "react-icons/md";
+import { randomID } from './Categories';
 
 const ops=[
         {
@@ -24,7 +25,7 @@ const Operations = () => {
 
         {
             ops.map(data=>{
-                return <SingleOp title={data.title} desc={data.desc} key={0}/>
+                return <SingleOp title={data.title} desc={data.desc} key={randomID}/>
             })
         }
     </div>

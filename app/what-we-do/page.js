@@ -1,12 +1,18 @@
 import About from '@/components/AboutComponents/About'
+import Values from '@/components/AboutComponents/Values'
+import ProjectCard from '@/components/homeComponents/ProjectCard'
 import React from 'react'
 
 function page() {
   return (
-    <div className="bg-[url('https://www.ivanhoemines.com/wp-content/themes/ivanhoemines/img/home_operations_map_drc.svg?v2)')] bg-cover bg-center bg-opacity-50 min-h-screen">
+    <div className="min-h-screen">
         
             <About/>
-
+            <Values/>
+            <div className="bg-mainColor">
+            <ProjectCard/>
+            </div>
+            
 
     </div>
   )

@@ -1,4 +1,8 @@
+import { metadata } from '@/app/layout'
 import React from 'react'
+
+
+metadata.title="What we do"
 
 function About() {
   return (
@@ -6,7 +10,7 @@ function About() {
 
 
 
-            <div className=" flex md:flex-row flex-col-reverse bg-mainColor">
+            <div className=" flex md:flex-row flex-col-reverse bg-mainColor md:rounded-bl-[10%] ">
                 
         <div className="side-1 bg-[url('https://www.ivanhoemines.com/wp-content/themes/ivanhoemines/img/home_operations_map_drc.svg?v2)')] bg-cover bg-center md:w-1/2 container mx-auto p-6 gap-3 flex flex-col">
 

@@ -9,6 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa6';
+import { randomID } from './Categories';
 
 
 const data = [
@@ -73,8 +74,8 @@ function ProjectCard() {
           <div className="center flex items-center justify-center">
 
           {data.map(data=>{
-            return         <SwiperSlide key={0}>
-            <SingleCard data={data} />
+            return         <SwiperSlide key={randomID}>
+            <SingleCard data={data} key={randomID} />
           </SwiperSlide>
   
           })}

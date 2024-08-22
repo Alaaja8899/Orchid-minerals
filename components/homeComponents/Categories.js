@@ -1,6 +1,11 @@
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa6'
 
+
+
+export const randomID = Math.random().toString(16).slice(2);
+
+
 const data=[
     {
         icon:"https://www.ivanhoemines.com/wp-content/uploads/2023/06/icon_our_people.png",
@@ -34,7 +39,7 @@ const Categories = () => {
 
             {
                 data.map(data=>{
-                   return <SingleCategory data={data} key={0}/>
+                   return <SingleCategory data={data} key={randomID}/>
                 })
             }
 
