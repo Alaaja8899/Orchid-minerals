@@ -1,4 +1,5 @@
 import React from 'react'
+import { randomID } from '../homeComponents/Categories'
 
 
 
@@ -35,7 +36,7 @@ function Values() {
 
                 {
                     data.map(data=>{
-                        return                     <div className="card md:w-[30rem] w-full border-mainColor border p-3 rounded text-center">
+                        return                     <div key={randomID} className="card md:w-[30rem] w-full border-mainColor border p-3 rounded text-center">
                         <h2
                         className='text-mainColor font-bold text-3xl'
                         >
