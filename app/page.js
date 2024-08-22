@@ -6,6 +6,7 @@ import ProjectCard from "@/components/homeComponents/ProjectCard";
 import Story from "@/components/homeComponents/Story";
 import SusHome from "@/components/homeComponents/SusHome";
 import TextEvu from "@/components/homeComponents/TextEvu";
+import Tweets from "@/components/homeComponents/Tweets";
 import Image from "next/image";
 
 export default function Home() {
@@ -20,8 +21,9 @@ export default function Home() {
         <TextEvu/>
         <Story/>
         <Categories/>
-
         <SusHome/>
+        <LookingLink/>
+        <Tweets/>
       </div>
 
 
