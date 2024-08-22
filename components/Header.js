@@ -22,42 +22,56 @@ function Header() {
         </span>
 
         <nav className={`${open ? 'flex':' hidden md:flex'} gap-3 items-center  ${open&& 'absolute md:relative'} md:top-0 top-[100%] bg-mainColor left-0 right-0 md:flex-row  flex-col md:h-fit h-dvh   transition duration-300 ease-out px-6`}>
-            <Link href={'/what-we-do'}  >
+    
             <span  
-            className={` md:w-fit w-full cursor-pointer ${open && 'border-b border-t'} rounded items-center flex gap-2 p-3 hover:border-b hover:border-white hover:text-gray-300`}>
-            What we do {open && <FaArrowRight/>}
-            </span>
+            className={` md:w-fit w-full ${open && 'border-b border-t'} rounded items-center flex gap-2 p-3 hover:border-b hover:border-white hover:text-gray-300`}>
+            <Link href={'/what-we-do'}  >
+            What we do 
             </Link>
-            <Link href={'/'}  >
-            <span className={` md:w-fit w-full ${open && 'border-b border-t'} cursor-pointer rounded flex gap-2 items-center p-3 hover:border-b hover:border-white hover:text-gray-300 `}>
-            Sustainability {open && <FaArrowRight/>}
+            {open && <FaArrowRight/>}
             </span>
-            </Link>
+
+            <span className={` md:w-fit w-full ${open && 'border-b border-t'} rounded flex gap-2 items-center p-3 hover:border-b hover:border-white hover:text-gray-300 `}>
             <Link href={'/'}  >
-            <span className={` md:w-fit w-full ${open && 'border-b border-t'} rounded flex cursor-pointer gap-2 p-3 items-center hover:border-b hover:border-white hover:text-gray-300`}>
-            News & Stories {open && <FaArrowRight/>}
+            Sustainability 
+            </Link>
+            {open && <FaArrowRight/>}
             </span>
-            </Link>
+
+            <span className={` md:w-fit w-full ${open && 'border-b border-t'} rounded flex gap-2 p-3 items-center hover:border-b hover:border-white hover:text-gray-300`}>
+
             <Link href={'/'}  >
-            <span className={` md:w-fit w-full ${open && 'border-b border-t'} rounded flex gap-2 p-3 cursor-pointer items-center hover:border-b hover:border-white hover:text-gray-300`}>
-            Investors {open && <FaArrowRight/>}
+            News & Stories 
+            </Link>
+            {open && <FaArrowRight/>}
             </span>
-            </Link>
+
+            <span className={` md:w-fit w-full ${open && 'border-b border-t'} rounded flex gap-2 p-3 items-center hover:border-b hover:border-white hover:text-gray-300`}>
             <Link href={'/'}  >
-            <span className={` md:w-fit w-full ${open && 'border-b border-t'} rounded flex gap-2 p-3 items-center cursor-pointer hover:border-b hover:border-white hover:text-gray-300`}>
-                Reports {open && <FaArrowRight/>}
+            Investors 
+            </Link>
+            {open && <FaArrowRight/>}
             </span>
-            </Link>
+
+            <span className={` md:w-fit w-full ${open && 'border-b border-t'} rounded flex gap-2 p-3 items-center hover:border-b hover:border-white hover:text-gray-300`}>
             <Link href={'/'}  >
+                Reports 
+            </Link>
+            {open && <FaArrowRight/>}
+            </span>
+
             <span className='border border-white rounded-full px-2 py-1 md:w-fit w-1/2'>
-            Contact                
-            </span>
-            </Link>
             <Link href={'/'}  >
-            <span>
-            <FaSearch />
-            </span>
+            Contact                
             </Link>
+            </span>
+
+            <span>
+            <Link href={'/'}  >
+            <FaSearch />
+            </Link>
+            </span>
+
         </nav>
 
 
