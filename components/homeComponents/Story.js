@@ -4,11 +4,11 @@ import TextEvu from './TextEvu'
 
 const Story = () => {
   return (
-    <div className="min-h-screen  bg-white   p-6">
-            <div className="container mx-auto p-6 flex md:flex-row flex-col  gap-3">
+    <div className="min-h-screen  bg-white   ">
+            <div className=" flex md:flex-row flex-col  gap-3">
     
             <div
-  className="img-container md:w-1/2 rounded-[5%] overflow-hidden"
+  className="img-container md:w-1/2 "
   style={{
     clipPath: 'polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%)',
   }}
@@ -19,12 +19,12 @@ const Story = () => {
 
 
 
-                <div className="content md:w-1/2">
+                <div className="content md:w-1/2 container mx-auto p-6">
                 <div className="card  bg-white">
 
 <div className="top my-10 flex items-center justify-between">
-<h1 className='text-3xl text-red-500 font-bold '>Our storie</h1>
-<button className='md:flex hidden bg-red-500 p-3 text-white rounded px-6 items-center justify-between gap-2'>See All <FaArrowRight/></button>
+<h1 className='text-4xl text-mainColor font-bold '>Our stories</h1>
+<button className='md:flex hidden bg-mainColor p-3 text-white rounded px-6 items-center justify-between gap-2'>See All <FaArrowRight/></button>
 </div>
 </div>
 
@@ -34,7 +34,7 @@ const Story = () => {
                         Born and raised in the vibrant town of Kolwezi in the Democratic Republic of the Congo, Armelle grew up in a large household of nine, where she learned the importance of fostering strong relationships both at home and in the workplace. Her passion for technology was ignited early on, leading her to earn a diploma in Mathematics and Physics from Ukweli Institute, followed by a bachelor’s degree in System and Network Administration from ESISalama.
                         Armelle’s...
                     </p>
-                        <a href="#!" className='text-red-500'>Read More</a>
+                        <a href="#!" className='text-blue-500'>Read More</a>
                 </div>
 
                 </div>

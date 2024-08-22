@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa6'
 
 const LookingLink = () => {
   return (
-    <div className='bg-red-700'>
+    <div className='bg-black'>
         
 
             <div className="container mx-auto p-6  text-white flex  flex-col items-center justify-between gap-3 ">
@@ -36,7 +36,7 @@ const LookingLink = () => {
                         <p className='font-bold'>
                         CA$18.18
                         </p>
-                        <span className='bg-white text-red-500 px-6 rounded py-2'>
+                        <span className='bg-white text-mainColor px-6 rounded py-2'>
                           +2.25%
                         </span>
                       </div>
@@ -54,7 +54,7 @@ const LookingLink = () => {
                         <p className='font-bold'>
                         CA$13.36
                         </p>
-                        <span className='bg-white text-red-500 px-6 rounded py-2'>
+                        <span className='bg-white text-mainColor px-6 rounded py-2'>
                           +2.30%
                         </span>
                       </div>

@@ -59,7 +59,7 @@ const SingleCategory=(props)=>{
                 <p className="desc font-medium">
                     {desc}
                 </p>
-                <a href="#!" className="link flex items-center gap-3 text-red-500">Learn More <FaArrowRight/></a>
+                <a href="#!" className="link flex items-center gap-3 text-blue-500">Learn More <FaArrowRight/></a>
             </div>
         )
 }

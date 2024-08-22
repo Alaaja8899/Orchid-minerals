@@ -12,7 +12,7 @@ function SusHome() {
                 Sustainability
                 </h1>
                 <p className='text-gray-500 font-medium'>
-                Ivanhoe operates under value-based principles of excellence, personal accountability, integrity and social and environmental responsibility. Our commitment to responsible exploration and mine development underlies our strategic vision, striving to ensure that social and economic benefits are shared widely through community enhancement initiatives and stakeholder agreements with host communities, local entrepreneurs and employees.
+                Orchid operates under value-based principles of excellence, personal accountability, integrity and social and environmental responsibility. Our commitment to responsible exploration and mine development underlies our strategic vision, striving to ensure that social and economic benefits are shared widely through community enhancement initiatives and stakeholder agreements with host communities, local entrepreneurs and employees.
                 </p>
                 <div className="btns flex gap-2">
                     <button

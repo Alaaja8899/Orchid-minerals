@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Orchid Minerals",
   description: "mineral factory company",
+  keywords:"orchid , minerals company ,orchid minerals"
 };
 
 export default function RootLayout({ children }) {

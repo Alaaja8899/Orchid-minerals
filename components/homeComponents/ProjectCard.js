@@ -53,7 +53,7 @@ function ProjectCard() {
 
       <div className="top my-10 flex items-center justify-between">
       <h1 className='text-3xl text-white font-bold '>Our Operations and Projects</h1>
-      <button className='md:flex hidden bg-red-500 p-3 text-white rounded px-6 items-center justify-between gap-2'>See All <FaArrowRight/></button>
+      <button className='md:flex hidden bg-white p-3 text-mainColor rounded px-6 items-center justify-between gap-2'>See All <FaArrowRight/></button>
       </div>
 
       <Swiper
@@ -103,7 +103,7 @@ const SingleCard = (props) => {
         <h1 className='font-bold text-2xl'>
           {title}
         </h1>
-        <h3 className='text-red-500 font-bold'>
+        <h3 className='text-mainColor font-bold'>
           {subtitle}
         </h3>
         <p>
