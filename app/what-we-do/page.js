@@ -5,14 +5,18 @@ import React from 'react'
 
 function page() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-mainColor">
         
-            <About/>
-            <Values/>
+           <div className="set-bg bg-mainColor">
+           <About/>
+            
             <div className="bg-mainColor">
             <ProjectCard/>
             </div>
-            
+           </div>
+            <div className="bg-white">
+            <Values/>
+            </div>
 
     </div>
   )

@@ -21,7 +21,7 @@ function Header() {
                 <nav className={`${open ? 'flex' : 'hidden md:flex'} gap-3 items-center ${open && 'absolute md:relative'} md:top-0 top-[100%] bg-mainColor left-0 right-0 md:flex-row flex-col md:h-fit h-dvh transition duration-300 ease-out px-6`}>
                     <ul className="flex flex-col md:flex-row gap-3 w-full">
                         <li onClick={() => setOpen(!open)}
-                            className={`md:w-fit w-full ${open && 'border-b border-t'} rounded flex gap-2 items-center p-3 hover:border-b hover:border-white hover:text-gray-300`}>
+                            className={`md:w-fit w-full ${open && 'border-b border-t md:border-b-none'} rounded flex gap-2 items-center p-3 hover:border-b hover:border-white hover:text-gray-300`}>
                             <Link href={'/what-we-do'}>
                                 What we do
                             </Link>
@@ -61,7 +61,7 @@ function Header() {
                         </li>
 
                         <li onClick={() => setOpen(!open)}
-                            className='border border-white rounded-full px-2 py-1 md:w-fit w-1/2'>
+                            className='border border-white rounded-full px-2 py-1 md:w-fit w-1/2 flex items-center justify-center text-center p-3'>
                             <Link href={'/'}>
                                 Contact
                             </Link>

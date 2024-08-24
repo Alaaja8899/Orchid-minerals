@@ -1,3 +1,4 @@
+import Categories from '@/components/homeComponents/Categories'
 import DollarCards from '@/components/SusComponents/DollarCards'
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa6'
@@ -32,7 +33,7 @@ function page() {
           </div>
 
           <DollarCards/>
-
+          <Categories/>
     </div>
   )
 }
