@@ -91,7 +91,7 @@ function ProjectCard() {
 const SingleCard = (props) => {
   const {title , subtitle , desc , img} = props.data
   return (
-    <div className="pro-card bg-white md:w-9/12 h-fit w-full flex md:flex-row  flex-col rounded-[5%] overflow-hidden mr-10">
+    <div className="pro-card cursor-pointer bg-white md:w-9/12 h-fit w-full flex md:flex-row  flex-col rounded-[5%] overflow-hidden mr-10">
       <div className="img ">
         <img
           className='w-full h-full'
