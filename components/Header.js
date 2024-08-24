@@ -54,7 +54,7 @@ function Header() {
 
                         <li onClick={() => setOpen(!open)}
                             className={`md:w-fit w-full ${open && 'border-b border-t'} rounded flex gap-2 items-center p-3 hover:border-b hover:border-white hover:text-gray-300`}>
-                            <Link href={'/'}>
+                            <Link href={'/document-libariry'}>
                                 Reports
                             </Link>
                             {open && <FaArrowRight />}
@@ -62,7 +62,7 @@ function Header() {
 
                         <li onClick={() => setOpen(!open)}
                             className='border border-white rounded-full px-2 py-1 md:w-fit w-1/2 flex items-center justify-center text-center p-3'>
-                            <Link href={'/'}>
+                            <Link href={'/contact'}>
                                 Contact
                             </Link>
                         </li>
