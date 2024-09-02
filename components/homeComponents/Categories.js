@@ -55,8 +55,10 @@ const SingleCategory=(props)=>{
         const {icon , title , desc }=props.data
         return(
             <div className="categrory flex-col gap-3 flex md:w-[30rem] w-full cursor-pointer text-white">
-                <div className="icon">
-                        <img src={icon} alt="icon" />
+                <div className="icon w-[50px] h-[50px] rounded-full overflow-hidden">
+                        <img 
+                        className='w-full h-full'
+                        src={icon} alt="icon" />
                 </div>
                 <h2 className="tit font-bold text-3xl">
                     {title}

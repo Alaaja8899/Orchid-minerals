@@ -21,7 +21,6 @@ export default function RootLayout({ children }) {
           <div className="mt-[100px]"></div>
         {children}
         </Container>
-        <LookingLink/>
         <Footer/>
         </body>
     </html>

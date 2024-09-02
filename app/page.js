@@ -22,8 +22,8 @@ export default function Home() {
         <Story/>
         <Categories/>
         <SusHome/>
-        <LookingLink/>
-        <Tweets/>
+        {/* <LookingLink/> */}
+        {/* <Tweets/> */}
       </div>
 
 

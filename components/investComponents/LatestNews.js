@@ -6,21 +6,25 @@ const LatestNews = () => {
       date: "19 Aug 2024",
       title: "Ivanhoe Mines Announces Phase 3 Concentrator at Kamoa-Kakula Copper Complex Has Achieved Commercial Production",
       description: "Kamoa-Kakula reports a record 35,941 tonnes of copper produced in July. Phase 3 increases annual copper [...]",
+      img:""
     },
     {
       date: "16 Aug 2024",
       title: "Ivanhoe Mines Reports Fatality at the Kamoa-Kakula Copper Complex",
       description: "Kolwezi, Democratic Republic of Congo–(Newsfile Corp. – August 16, 2024) – Ivanhoe Mines (TSX: IVN) (OTCQX: [...]",
+      img:""
     },
     {
       date: "31 Jul 2024",
       title: "Ivanhoe Mines Issues Second Quarter 2024 Financial Results, and Review of Construction and Exploration",
       description: "",
+      img:""
     },
     {
       date: "22 Jul 2024",
       title: "Ivanhoe Mines to Issue Q2 2024 Financial Results and Host Conference Call for Investors on July 31, 2024",
       description: "",
+      img:""
     },
   ];
 

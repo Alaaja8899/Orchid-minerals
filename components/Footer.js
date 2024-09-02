@@ -37,7 +37,7 @@ function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-100 border-t-2 border-mainColor">
       <div className="">
         
         <div className="flex justify-between items-center p-6 container mx-auto">
@@ -45,11 +45,11 @@ function Footer() {
         </div>
         
         <div className="space-y-8 ">
-          <h1 className="font-bold text-mainColor text-3xl p-6 container mx-auto">Frequently Asked Questions</h1>
+          {/* <h1 className="font-bold text-mainColor text-3xl p-6 container mx-auto">Frequently Asked Questions</h1> */}
           <div className="space-y-4 container mx-auto p-6">
-            {faqs.map((data, index) => (
+            {/* {faqs.map((data, index) => (
               <FAQItem key={index} data={data} />
-            ))}
+            ))} */}
           </div>
 
 

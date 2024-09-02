@@ -1,6 +1,7 @@
 import Story from '@/components/homeComponents/Story'
 import LatestContent from '@/components/investComponents/LatestContent';
 import LatestNews from '@/components/investComponents/LatestNews';
+import StoriesPage from '@/components/NewsComponents/StoriesPiege';
 import React from 'react'
 
 function page() {
@@ -13,7 +14,8 @@ function page() {
  
     return (
     <div>
-          <LatestContent/>
+      <StoriesPage/>
+          {/* <LatestContent/> */}
           <LatestNews/>
 
         <Story/>
