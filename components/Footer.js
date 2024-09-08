@@ -102,9 +102,9 @@ function Footer() {
                   />
                 </svg>
               </div>
-              <dt className="mt-4 font-semibold text-white">Weekly articles</dt>
+              <dt className="mt-4 font-semibold text-white">What We do </dt>
               <dd className="mt-2 leading-7 text-gray-400">
-                Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.
+                Sustainabilty
               </dd>
             </div>
             <div className="flex flex-col items-start">
@@ -124,9 +124,9 @@ function Footer() {
                   />
                 </svg>
               </div>
-              <dt className="mt-4 font-semibold text-white">No spam</dt>
+              <dt className="mt-4 font-semibold text-white">Investors</dt>
               <dd className="mt-2 leading-7 text-gray-400">
-                Officia excepteur ullamco ut sint duis proident non adipisicing. Voluptate incididunt anim.
+                Contact us 
               </dd>
             </div>
           </dl>
