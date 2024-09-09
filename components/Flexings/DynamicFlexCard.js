@@ -14,7 +14,7 @@ const categories = [
 const reportsData = [
   {
     date: "31 Jul 2024",
-    title: "Management's Discussion and Analysis for the period ended June 30, 2024",
+    title: "Management&apos;s Discussion and Analysis for the period ended June 30, 2024",
     type: "Quarterly",
   },
   {
@@ -24,7 +24,7 @@ const reportsData = [
   },
   {
     date: "30 Apr 2024",
-    title: "Management's Discussion and Analysis for the period ended March 31, 2024",
+    title: "Management&apos;s Discussion and Analysis for the period ended March 31, 2024",
     type: "Quarterly",
   },
   {
@@ -84,7 +84,7 @@ const reportsData = [
   },
   {
     date: "15 Aug 2023",
-    title: "Management's Discussion and Analysis for the period ended June 30, 2023",
+    title: "Management&apos;s Discussion and Analysis for the period ended June 30, 2023",
     type: "Quarterly",
   },
   {
