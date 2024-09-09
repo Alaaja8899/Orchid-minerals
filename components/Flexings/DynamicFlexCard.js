@@ -171,7 +171,7 @@ const DynamicFlexCard = () => {
               {report.type}
             </div>
             <button className="text-mainColor hover:underline">
-              <span>&#x2193;</span> {/* Download icon */}
+              {/* <span>&#x2193;</span> Download icon */}
             </button>
           </div>
         ))}
