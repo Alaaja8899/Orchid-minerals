@@ -1,37 +1,84 @@
 import React from 'react';
+import { FaEnvelope, FaMap, FaPhone } from 'react-icons/fa6';
 
 const ContactSection = () => {
   return (
-    <div className="bg-gray-900 text-white p-8">
-      {/* Contact Header */}
-      <div className="relative bg-mainColor text-4xl font-bold p-6">
-        <div className="absolute inset-0 bg-mainColor transform skew-x-12" />
-        <h2 className="relative z-10">Contact</h2>
-      </div>
+    <section className="contact-section bg-[#0a2c4a] pt-10 p-6">
+        <h2 className='font-bold text-2xl text-center text-white mb-20'>GET IN TOUCH</h2>
 
-      {/* Office Locations */}
-      <div className="mt-8">
-        <h3 className="text-3xl font-bold mb-6">Our Offices:</h3>
-        <div className="flex justify-between">
-          {/* Vancouver Office */}
-          <div className="space-y-2">
-            <h4 className="text-2xl font-semibold">Vancouver</h4>
-            <p>606-999 Canada Place<br />Vancouver, BC<br />Canada V6C3E1</p>
-            <p>Phone: +1-604-688-6630</p>
-            <p>Fax: +1-604-682-2060</p>
-            <div className="h-1 bg-mainColor w-16 mt-2"></div>
-          </div>
-          {/* South Africa Office */}
-          <div className="space-y-2">
-            <h4 className="text-2xl font-semibold">South Africa</h4>
-            <p>82 Maude Street,<br />Second Floor Sandton,<br />South Africa, 2146</p>
-            <p>Phone: +27-11-088-4300</p>
-            <p>Fax: +27-86-675-1836</p>
-            <div className="h-1 bg-mainColor w-16 mt-2"></div>
-          </div>
+
+        <div className="contact-info flex flex-wrap my-5 gap-2 justify-between">
+        <div 
+        className="info-card md:w-[20rem] w-full text-center text-mainColor bg-white flex items-center justify-center flex-col rounded p-3"
+        >
+          <i className="icon-location">
+            <FaMap size={32}/>
+          </i>
+          <h3>Address</h3>
+          <p>UK: 215 Uxbridge Road London W13 9AA</p>
+        </div>
+        <div 
+        className="info-card text-mainColor  md:w-[20rem] w-full text-center bg-white flex items-center justify-center flex-col rounded p-3"
+        >
+          <i className="icon-mail">
+            <FaEnvelope size={32}/>
+          </i>
+          <h3>E-mail</h3>
+          <p>info@enterpoint.group</p>
+        </div>
+        <div 
+        className="info-card text-mainColor md:w-[20rem] w-full text-center bg-white flex items-center justify-center flex-col rounded p-3"
+        >
+          <i className="icon-phone">
+              <FaPhone size={32}/>
+          </i>
+          <h3>Call us</h3>
+          <p>+252-613-908081</p>
         </div>
       </div>
-    </div>
+
+
+
+      <div className="contact-form bg-white rounded flex md:flex-row flex-col gap-2 p-3">
+        <div className="textFrom md:w-1/2">
+        <h1 className='font-bold text-2xl text-mainColor'>Contact Us</h1>
+        <p
+        className='text-gray-400'
+        >
+          Feel free to reach out for any inquiries or support. You can leave your
+          information below, and we'll get back to you as soon as possible.
+        </p>
+
+        </div>
+        <form className="form flex flex-col gap-2 md:w-1/2">
+          <div className="input-group flex flex-col gap-2">
+            <input
+            className='w-full rounded outline-none border p-3 border-mainColor'
+            type="text" placeholder="Your name" />
+            <input
+            className='w-full rounded outline-none border p-3 border-mainColor'
+            type="email" placeholder="E-mail" />
+          </div>
+          <textarea
+            className='w-full rounded outline-none border p-3 border-mainColor'
+          placeholder="Write your message"></textarea>
+          <button
+            className='w-full rounded outline-none border p-3 border-mainColor bg-mainColor text-white'
+          type="submit">Submit Now</button>
+        </form>
+      </div>
+
+      <div className="map-container">
+        <iframe
+          src="https://maps.google.com/maps?q=London%20W13%209AA&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="300"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
   );
 };
 

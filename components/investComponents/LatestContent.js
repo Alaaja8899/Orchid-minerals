@@ -31,28 +31,6 @@ const LatestContent = () => {
             className="w-full h-60 object-cover relative"
           />
           <div className="absolute inset-0 flex items-center justify-center">
-            <button className="bg-white p-4 rounded-full shadow-lg">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="h-8 w-8 text-mainColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.92v4.132a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 19.938a7.937 7.937 0 100-15.875 7.937 7.937 0 000 15.875z"
-                />
-              </svg>
-            </button>
           </div>
           <div className="p-4">
             <p className="text-gray-700 text-sm mt-1">
