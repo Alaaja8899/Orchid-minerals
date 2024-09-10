@@ -5,6 +5,7 @@ import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Image from 'next/image';
 import { FaArrowRight, FaEnvelope, FaLocationPin, FaPhone } from 'react-icons/fa6';
+import Link from 'next/link';
 
 const faqs = [
   {
@@ -40,9 +41,6 @@ function Footer() {
     <div className="bg-gray-100 border-t-2 border-mainColor">
       <div className="">
         
-        {/* <div className="flex justify-between items-center p-6 container mx-auto">
-          <Image src="/assets/logo-dark.png" width={200} height={400} alt="Orchid Minerals Logo" />
-        </div> */}
         
         <div className="space-y-8 ">
           {/* <h1 className="font-bold text-mainColor text-3xl p-6 container mx-auto">Frequently Asked Questions</h1> */}
@@ -57,17 +55,17 @@ function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div className="max-w-xl lg:max-w-lg">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            {/* <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Subscribe to our newsletter.
-            </h2>
-            <p className="mt-4 text-lg leading-8 text-gray-300">
+            </h2> */}
+            {/* <p className="mt-4 text-lg leading-8 text-gray-300">
               Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt dolore.
-            </p>
+            </p> */}
             <div className="mt-6 flex max-w-md gap-x-4">
-              <label htmlFor="email-address" className="sr-only">
+              {/* <label htmlFor="email-address" className="sr-only">
                 Email address
-              </label>
-              <input
+              </label> */}
+              {/* <input
                 id="email-address"
                 name="email"
                 type="email"
@@ -81,7 +79,13 @@ function Footer() {
                 className="flex-none rounded-md bg-mainColor px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
                 Subscribe
-              </button>
+              </button> */}
+
+<div className="flex justify-between items-center p-6 container mx-auto">
+          <Image src="/assets/logo-white.png" width={200} height={400} alt="Orchid Minerals Logo" />
+        </div>
+
+
             </div>
           </div>
           <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
@@ -89,23 +93,26 @@ function Footer() {
               <div className="rounded-md text-white font-bold">
               <h1>Our Company</h1>
               </div>
-              <dt className="mt-4 font-semibold text-gray-400">What We do </dt>
+              <dt className="mt-4 font-semibold text-gray-400">
+                <Link href={'/what-we-do'}>                What We do 
+                </Link>
+                </dt>
               <dd className="mt-2 leading-7 text-gray-400">
-                <a href="#!">Sustainabilty</a>
+                <Link href={'/sustainability'}>Sustainabilty</Link>
               </dd>
               <dd className="mt-2 leading-7 text-gray-400">
-              <a href="#!">News & Stories</a>
+                <Link href={'/news-and-stories'}>News & Stories</Link>
               </dd>
               <dd className="mt-2 leading-7 text-gray-400">
-                <a href="#!">Investors</a>
+                <Link href={'/investors'}>Investors</Link>
               </dd>
               <dd className="mt-2 leading-7 text-gray-400">
-                <a href="#!">Reports</a>
+                <Link href={'/document-libariry'}>Reports</Link>
               </dd>
             </div>
             <div className="flex flex-col items-start">
               <div className="rounded-md text-white font-bold">
-              Contact us
+              <Link href={'/contact'}>Contact us</Link>
               </div>
               <dt className="mt-4 font-semibold text-white">  </dt>
               <dd className="mt-2 leading-7 text-gray-400 flex">
