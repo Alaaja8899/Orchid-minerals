@@ -5,13 +5,15 @@ import Link from 'next/link'
 import { FaArrowRight } from "react-icons/fa6";
 import { FaSearch, FaBars } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
+import CommidityPrices from './CommidityPrices';
 
 function Header() {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className='bg-mainColor border-b text-white fixed h-[100px] flex items-center justify-center right-0 left-0 top-0 z-20'>
-            <div className="w-full container relative h-full mx-auto p-6 flex items-center justify-between">
+        <div className='bg-mainColor border-b text-white fixed min-h-[100px] flex flex-col items-center justify-center right-0 left-0 top-0 z-20'>
+            <CommidityPrices/>
+            <div className="w-full container relative h-full mx-auto px-6 py-4 flex items-center justify-between">
                 <span className="brand">
                     <Link href={'/'}>
                         <Image src={'/assets/logo-white.png'} width={200} height={400} />
